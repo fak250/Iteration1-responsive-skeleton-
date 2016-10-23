@@ -1,8 +1,31 @@
 	/*Making sure that padding and border are included in margin*/
 
-html {
+html,body {
 	font-family: "Helvectica", sans-serif;
 	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	
+}
+
+body{
+	overflow: hidden;
+}
+
+#sp
+{
+	display: inline;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	z-index: -1;
+	position: absolute;
+}
+
+#main .panel {
+    background-image: url(images/background_image.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -11,6 +34,20 @@ html {
 [class*="col-"] {
 	width: 100%;
 }
+
+.panel {
+    width: 100%;
+    height: 500px;
+    z-index:0; 
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
 
 
 /*Clears the flow of the page*/
