@@ -173,10 +173,12 @@ ul li a {
 	margin: 0;
 }
 
-#self care{
-	z-index: 12;
+.selfcarecontainer{
 	float: right;
+	position: fixed;
 }
+
+
 /*
  *Scrolling
  */

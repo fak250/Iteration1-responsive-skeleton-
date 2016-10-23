@@ -12,15 +12,6 @@ body{
 	overflow: hidden;
 }
 
-#sp
-{
-	display: inline;
-	width: 100%;
-	height: 100%;
-	margin: auto;
-	z-index: -1;
-	position: absolute;
-}
 
 #main .panel {
     background-image: url(images/background_image.svg);
@@ -29,11 +20,6 @@ body{
 }
 
 
-/* For mobile phones: */
-
-[class*="col-"] {
-	width: 100%;
-}
 
 .panel {
     width: 100%;
@@ -143,6 +129,13 @@ footer {
 		}
 	}
 	
+
+/* For mobile phones: */
+
+[class*="col-"] {
+	width: 100%;
+}
+
 #comic{
 	margin: auto;
 	align-content: center;
