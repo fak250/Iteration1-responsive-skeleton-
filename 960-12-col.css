@@ -1,0 +1,226 @@
+/* Grid Setup for page*/
+
+
+/* Fix the width of the body */
+
+body {
+	width: 100%;
+	margin: auto;
+}
+
+
+/* Wrapper */
+
+.row {
+	width: 100%;
+	margin: auto;
+}
+
+
+/* Column margins */
+
+.col_12,
+
+/* full width */
+
+.col_9,
+
+/* 3/4 width */
+
+.col_8,
+
+/* 2/3 width */
+
+.col_6,
+
+/* half width */
+
+.col_4,
+
+/* 1/3 width */
+
+.col_3
+/* 1/4 width */
+
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	display: inline;
+	float: left;
+}
+
+.first {
+	margin-left: 0;
+}
+
+.last {
+	margin-right: 0;
+}
+
+
+/* Defining width of each column */
+
+.col_12 {
+	width: 100%;
+}
+
+.col_9 {
+	width: 75%;
+}
+
+.col_8 {
+	width: 66.66%;
+}
+
+.col_6 {
+	width: 50%;
+}
+
+.col_4 {
+	width: 33.33%;
+}
+
+.col_3 {
+	width: 25%;
+}
+
+
+/* Fix the .last issue */
+
+.last {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+}
+
+/* Grid Setup end for page*/
+
+/* Styling Start*/
+
+/*formatting for the header*/
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 3.5rem;
+	z-index: 10;
+	background-color: #FFFEDA;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: space-around;
+	background-image: url(images/Tagline.png), url(images/balloon.png);
+	background-position: right, left;
+	background-repeat: no-repeat;
+}
+
+/*formatting for the list nav*/
+nav {
+	width: 100%;
+	padding-top: 30px;
+	display: flex;
+	display: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+ul li,
+#main .panel {
+	background: #fdb82b;
+	margin: 0;
+	left: 0;
+	top: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+ul li {
+	display: inline-block;
+	margin: 0 8px;
+	margin: 0 0.5rem;
+	padding: 5px 8px;
+	padding: 0.3rem 0.5rem;
+	border-radius: 2px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+div#home.panel{
+	background: #fdb82b;
+}
+
+#panel_5 {
+	font-family: "courier";
+	font-size: 8rem;
+	height: 45%;
+	margin-top: 30px;
+}
+#self {
+	font-family: "Times New Roman";
+	color: #FD9426;
+	font-size: 2.5rem;
+}
+#tagline {
+	font-family: "comic sans ms";
+	color: black;
+	font-size: 2.5rem;
+}
+/*styling second panel*/
+#panel_10{
+	height=100%;
+}
+/* First and Last */
+img {
+	width: 80%;
+}
+
+div#Home.panel{
+	background: #FDE4A4;
+}
+
+#panel_10{
+	height: 100%;
+}
+
+/*****************/
+
+/* MEDIA QUERIES */
+
+/*****************/
+@media screen and (max-width:760px) {
+	#panel_5 {
+		font-family: "courier";
+		font-size: 4rem;
+		height: 45%;
+		margin-top: 30px;
+	}
+	#tagline {
+	font-family: "comic sans ms";
+	color: black;
+	font-size: 1.5rem;
+}
+	
+	@media screen and (max-width:350px) {
+	#panel_5 {
+		font-family: "courier";
+		font-size: 2rem;
+		height: 45%;
+		margin-top: 100px;
+	}
+	#tagline {
+	font-family: "comic sans ms";
+	color: black;
+	font-size: 1rem;
+}
+}
